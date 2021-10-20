@@ -19,7 +19,6 @@ const config = {
 
 	preprocess: [
 		preprocess({
-			defaults: { style: "postcss" },
 			postcss: true
 		})
 	]
