@@ -1,38 +1,46 @@
-# create-svelte
+# Tailkit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[SvelteKit](https://kit.svelte.dev/) and [TailwindCSS](https://tailwindcss.com/) started template. For the most basic SvelteKit starter template, see [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
-## Creating a project
+## Features
+
+Tailkit expands on the default SvelteKit template by including [TailwindCSS](https://tailwindcss.com/). It also comes with a couple of nifty dependencies to kickstart your development:
+- [@sveltejs/adapter-node](https://www.npmjs.com/package/@sveltejs/adapter-node) allows SvelteKit to run in a nodejs environment
+- [PostCSS](https://www.npmjs.com/package/postcss) transforms css programatically with plugins
+-- [autoprefixer](https://www.npmjs.com/package/autoprefixer) adds browser prefixes
+-- [postcss-import](https://www.npmjs.com/package/postcss-import) enables familiar sass-like importing (*instead of referencing*)
+-- [postcss-nested](https://www.npmjs.com/package/postcss-nested) enables familiar sass-like nesting
+-- [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) allows you to use future CSS features today
+
+## Install
 
 If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
+# Clone the repository to the current directory
+git clone https://github.com/Conceptiks/tailkit.git
 
-# create a new project in my-app
-npm init svelte@next my-app
+# Install all dependencies
+npm install
 ```
 
-> Note: the `@next` is temporary
+> Note: Tailkit currently uses `@sveltejs/kit@next`, which at the time of writing, has not yet reached v1.0.0.
 
-## Developing
+## Usage
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start developing locally right away by using: 
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
+When trying to deploy, `build` and then `preview` your output like so:
 ```bash
+# Build output with adapter-node first
 npm run build
+
+# Preview your build (works regardless of presence of an adapter)
+npm run preview
 ```
 
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+> Note from SvelteKit repo: You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
