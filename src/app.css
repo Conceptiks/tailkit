@@ -1,4 +1,13 @@
+/* Use @import to SASS-Style include other css files (instead of just referencing them) */
+
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    @apply border-blue-400 border-b-2 border-dotted font-medium transition-all ease-in-out;
+    &:hover {
+        @apply border-green-400
+    }
+}
