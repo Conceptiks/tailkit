@@ -7,10 +7,10 @@
 Tailkit expands on the default SvelteKit template by including [TailwindCSS](https://tailwindcss.com/). It also comes with a couple of nifty dependencies to kickstart your development:
 - [@sveltejs/adapter-node](https://www.npmjs.com/package/@sveltejs/adapter-node) allows SvelteKit to run in a nodejs environment
 - [PostCSS](https://www.npmjs.com/package/postcss) transforms css programatically with plugins
--- [autoprefixer](https://www.npmjs.com/package/autoprefixer) adds browser prefixes
--- [postcss-import](https://www.npmjs.com/package/postcss-import) enables familiar sass-like importing (*instead of referencing*)
--- [postcss-nested](https://www.npmjs.com/package/postcss-nested) enables familiar sass-like nesting
--- [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) allows you to use future CSS features today
+  - [autoprefixer](https://www.npmjs.com/package/autoprefixer) adds browser prefixes
+  - [postcss-import](https://www.npmjs.com/package/postcss-import) enables familiar sass-like importing (*instead of referencing*)
+  - [postcss-nested](https://www.npmjs.com/package/postcss-nested) enables familiar sass-like nesting
+  - [postcss-preset-env](https://www.npmjs.com/package/postcss-preset-env) allows you to use future CSS features today
 
 ## Install
 
