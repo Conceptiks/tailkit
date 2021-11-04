@@ -1,6 +1,6 @@
 # Tailkit
 
-[SvelteKit](https://kit.svelte.dev/) and [TailwindCSS](https://tailwindcss.com/) started template. For the most basic SvelteKit starter template, see [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[SvelteKit](https://kit.svelte.dev/) and [TailwindCSS](https://tailwindcss.com/) starter template. For the most basic SvelteKit starter template, see [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
 
 ## Features
 
